@@ -1,8 +1,11 @@
 {
-  "name": "template",
-  "version": "0.0.1",
+  "name": "waline-example",
+  "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "build": "mkdir -p public && echo 'ok' > public/index.html"
+  },
   "dependencies": {
-    "@waline/vercel": "latest"
+    "@waline/vercel": "^3.5.0"
   }
 }
