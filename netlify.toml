@@ -1,4 +1,7 @@
+[build]
+  functions = "functions"
+
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/comment/:splat"
   status = 200
