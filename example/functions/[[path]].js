@@ -1,11 +1,11 @@
 import waline from '@waline/vercel';
 
 const app = waline({
-  // 基础配置由 Cloudflare Pages 的环境变量（MONGO_URL 等）自动注入
+  // 环境变量（MONGO_URL、MONGO_DB 等）会自动从 Cloudflare 后台读取
 });
 
 export async function onRequest(context) {
-  // 注入 Cloudflare 的环境变量到 process.env
+  // 把 Cloudflare 的环境变量注入到运行环境
   Object.assign(process.env, context.env);
   return app(context.request);
 }
