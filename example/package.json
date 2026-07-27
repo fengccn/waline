@@ -2,10 +2,7 @@
   "name": "waline-example",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "build": "mkdir -p public && echo 'ok' > public/index.html"
-  },
   "dependencies": {
-    "@waline/vercel": "^3.5.0"
+    "@waline/server": "^3.5.0"
   }
 }
